@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TilSys - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDCB.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../GuiExt" /I "../TilCore" /I "../header" /I "../Canvas/CxImage" /I "../Canvas" /I "../MathPro" /I "../GuiLib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/TilSys.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Projects\2011四川省科技厅应用基础研究项目\系统代码\AllPrj\TilSys\GuiOutPut.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDCB.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDCC.tmp" with contents
+[
+GuiExt.lib GuiLibd114.lib TilCore.lib Canvas.lib /nologo /stack:0x989680 /subsystem:windows /incremental:yes /pdb:"../bin/TilSys.pdb" /debug /machine:I386 /out:"../bin/TilSys.exe" /pdbtype:sept /libpath:"../lib" 
+".\Debug\ADOConn.obj"
+".\Debug\ChildFrm.obj"
+".\Debug\DlgPointStre.obj"
+".\Debug\DlgRulerSet.obj"
+".\Debug\DlgThreshold.obj"
+".\Debug\DlgTunnelNames.obj"
+".\Debug\DragTree2.obj"
+".\Debug\GuiCrackCaption.obj"
+".\Debug\GuiOutPut.obj"
+".\Debug\GuiServerExplorer.obj"
+".\Debug\GuiSolExplorer.obj"
+".\Debug\MainFrm.obj"
+".\Debug\MenuImage.obj"
+".\Debug\MenuView.obj"
+".\Debug\StdAfx.obj"
+".\Debug\StyleBar.obj"
+".\Debug\SysView.obj"
+".\Debug\TilSys.obj"
+".\Debug\TilSysDoc.obj"
+".\Debug\TilSysView.obj"
+".\Debug\TilSys.res"
+"\Projects\2011四川省科技厅应用基础研究项目\系统代码\AllPrj\lib\MathPro.lib"
+"\Projects\2011四川省科技厅应用基础研究项目\系统代码\AllPrj\lib\GuiExt.lib"
+"\Projects\2011四川省科技厅应用基础研究项目\系统代码\AllPrj\lib\TilCore.lib"
+"\Projects\2011四川省科技厅应用基础研究项目\系统代码\AllPrj\lib\GuiLibd114.lib"
+"\Projects\2011四川省科技厅应用基础研究项目\系统代码\AllPrj\lib\Canvas.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDCC.tmp"
+<h3>Output Window</h3>
+Compiling...
+GuiOutPut.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+TilSys.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

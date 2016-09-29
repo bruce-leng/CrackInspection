@@ -1,0 +1,1022 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IMAGE_THRESHOLD DIALOG DISCARDABLE  0, 0, 252, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置阈值"
+FONT 9, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,195,6,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,195,25,50,16
+    EDITTEXT        IDC_EDIT1,89,19,29,12
+    LTEXT           "阈值:",IDC_STATIC,42,21,26,8
+    PUSHBUTTON      "-",IDC_THRESHOLD_MINUS,69,18,15,14
+    PUSHBUTTON      "+",IDC_THRESHOLD_PLUS,123,18,15,14
+    CONTROL         "预览",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    195,45,31,10
+    CONTROL         "Slider2",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,21,42,144,15
+    LTEXT           "0",IDC_STATIC,18,46,8,8
+    LTEXT           "255",IDC_STATIC,165,46,16,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_IMAGE_THRESHOLD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 59
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_GRAY                ICON    DISCARDABLE     "res\\gray.ico"
+IDI_G                   ICON    DISCARDABLE     "res\\r1.ico"
+IDI_R                   ICON    DISCARDABLE     "res\\no1.ico"
+IDI_B                   ICON    DISCARDABLE     "res\\b1.ico"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 247, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 TLCIRS V1.0"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,14,20,20
+    LTEXT           "隧道衬砌裂缝图像识别系统 V1.0",IDC_STATIC,40,15,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2014",IDC_STATIC,40,73,119,8
+    DEFPUSHBUTTON   "确定",IDOK,190,69,50,14,WS_GROUP
+    LTEXT           "Tunnel Lining Crack Image Recognition System V1.0",
+                    IDC_STATIC,40,25,200,23,SS_NOPREFIX
+    LTEXT           "西南交通大学",IDC_STATIC,40,61,121,9,SS_NOPREFIX
+END
+
+IDD_IMAGE_CONCACT_STEP1 DIALOG DISCARDABLE  0, 0, 835, 397
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "掌子面图像拼接（步骤1）"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_IMAGE1,"Static",SS_BLACKFRAME,12,29,200,133
+    LTEXT           "图1",IDC_STATIC,106,18,12,8
+    CONTROL         "",IDC_IMAGE2,"Static",SS_BLACKFRAME,216,29,200,133
+    CONTROL         "",IDC_IMAGE3,"Static",SS_BLACKFRAME,420,29,200,133
+    LTEXT           "图2",IDC_STATIC,310,18,12,8
+    LTEXT           "图3",IDC_STATIC,514,18,12,8
+    PUSHBUTTON      "...",IDC_LOAD1,12,169,18,15
+    EDITTEXT        IDC_EDIT_PATH1,37,169,175,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_LOAD2,216,169,18,15
+    EDITTEXT        IDC_EDIT_PATH2,241,169,175,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_LOAD3,421,169,18,15
+    EDITTEXT        IDC_EDIT_PATH3,446,169,175,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_IMAGE4,"Static",SS_BLACKFRAME,12,206,200,133
+    LTEXT           "图4",IDC_STATIC,106,195,12,8
+    CONTROL         "",IDC_IMAGE5,"Static",SS_BLACKFRAME,216,206,200,133
+    CONTROL         "",IDC_IMAGE6,"Static",SS_BLACKFRAME,420,206,200,133
+    LTEXT           "图5",IDC_STATIC,310,195,12,8
+    LTEXT           "图6",IDC_STATIC,514,195,12,8
+    PUSHBUTTON      "...",IDC_LOAD4,12,346,18,15
+    EDITTEXT        IDC_EDIT_PATH4,37,346,175,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_LOAD5,216,346,18,15
+    EDITTEXT        IDC_EDIT_PATH5,241,346,175,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_LOAD6,421,346,18,15
+    EDITTEXT        IDC_EDIT_PATH6,446,346,175,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "自动识别点坐标",IDC_RECOGNITION,314,376,62,14
+    GROUPBOX        "待拼接局部掌子面图像",IDC_STATIC,7,7,618,362
+    LTEXT           "施工方法：",IDC_STATIC,636,16,41,8
+    COMBOBOX        IDC_COMBO1,681,14,147,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_JOB_METHOD,"Static",SS_BLACKFRAME,631,43,197,141
+    LTEXT           "施工顺序及掌子面序号：",IDC_STATIC,636,31,89,8
+    GROUPBOX        "标定点坐标",IDC_STATIC,631,188,197,184
+    LTEXT           "图像坐标",IDC_STATIC,658,202,33,8
+    LTEXT           "大地坐标",IDC_STATIC,749,203,33,8
+    LTEXT           "1",IDC_STATIC,635,230,8,8
+    EDITTEXT        IDC_IMAGE_X1,644,228,30,12,ES_AUTOHSCROLL
+    LTEXT           "x",IDC_STATIC,654,213,8,8
+    LTEXT           "y",IDC_STATIC,686,213,8,8
+    EDITTEXT        IDC_IMAGE_Y1,676,228,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRND_X1,716,228,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRND_Y1,753,228,35,12,ES_AUTOHSCROLL
+    LTEXT           "x",IDC_STATIC,729,213,8,8
+    LTEXT           "y",IDC_STATIC,764,213,8,8
+    LTEXT           "2",IDC_STATIC,635,256,8,8
+    EDITTEXT        IDC_IMAGE_X2,643,254,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IMAGE_Y2,676,254,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRND_X2,715,254,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRND_Y2,753,254,35,12,ES_AUTOHSCROLL
+    LTEXT           "3",IDC_STATIC,635,281,8,8
+    EDITTEXT        IDC_IMAGE_X3,643,279,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IMAGE_Y3,676,279,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRND_X3,715,279,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRND_Y3,753,279,35,12,ES_AUTOHSCROLL
+    LTEXT           "4",IDC_STATIC,635,306,8,8
+    EDITTEXT        IDC_IMAGE_X4,643,304,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IMAGE_Y4,676,304,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRND_X4,715,304,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRND_Y4,753,304,35,12,ES_AUTOHSCROLL
+    LTEXT           "5",IDC_STATIC,635,330,8,8
+    EDITTEXT        IDC_IMAGE_X5,643,328,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IMAGE_Y5,676,328,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRND_X5,715,328,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRND_Y5,753,328,35,12,ES_AUTOHSCROLL
+    LTEXT           "6",IDC_STATIC,635,354,8,8
+    EDITTEXT        IDC_IMAGE_X6,643,352,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IMAGE_Y6,676,352,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRND_X6,715,352,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRND_Y6,753,352,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRND_Z1,791,228,35,12,ES_AUTOHSCROLL
+    LTEXT           "z",IDC_STATIC,803,214,8,8
+    EDITTEXT        IDC_GRND_Z2,791,254,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRND_Z3,791,280,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRND_Z4,791,304,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRND_Z5,791,328,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRND_Z6,791,352,35,12,ES_AUTOHSCROLL
+END
+
+IDD_IMAGE_CONCACT_STEP2 DIALOG DISCARDABLE  0, 0, 835, 402
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "掌子面图像拼接（步骤2）"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "图像剪切",IDC_IMAGE_CUT,269,381,51,14
+    CONTROL         "",IDC_IMAGE,"Static",SS_BLACKFRAME,83,7,660,365
+    PUSHBUTTON      "图像保存",IDC_IMAGE_SAVE,453,381,51,14
+END
+
+IDD_IMAGE_CONCACT_STEP3 DIALOG DISCARDABLE  0, 0, 835, 402
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "掌子面图像拼接（步骤3）"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "保存图像",IDC_SAVE,407,381,50,14
+    CONTROL         "",IDC_FACE,"Static",SS_BLACKFRAME,83,7,660,365
+END
+
+IDD_IMAGE_RULER_SET DIALOG DISCARDABLE  0, 0, 179, 104
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置当前切片比例尺"
+FONT 9, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_REAL_WIDTH,81,39,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,31,83,50,14
+    DEFPUSHBUTTON   "OK",IDOK,97,83,50,14
+    GROUPBOX        "",IDC_STATIC,7,7,165,72
+    LTEXT           "两点间图像距离：",IDC_STATIC,18,20,59,10
+    EDITTEXT        IDC_PIXEL_WIDTH,81,18,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "像素(Pixel)",IDC_STATIC,126,21,34,8
+    LTEXT           "两点间实测长度：",IDC_STATIC,18,41,57,10
+    LTEXT           "毫米(mm)",IDC_STATIC,127,42,32,8
+    LTEXT           "统一比例尺：  1:1 (像素:毫米)",IDC_STATIC,17,61,136,11
+END
+
+IDD_DLG_POINTSTRE DIALOG DISCARDABLE  0, 0, 215, 216
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "灰度折线变换"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "",IDC_COORD,0,0,146,124
+    DEFPUSHBUTTON   "确定",IDOK,115,202,50,14
+    PUSHBUTTON      "取消",IDCANCEL,165,202,50,14
+END
+
+IDD_TUNNEL_NAMES DIALOG DISCARDABLE  0, 0, 203, 132
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "隧道名称设置"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDT_LINE_NAME,48,7,148,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_TUN_NAME,48,44,148,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CMB_PART_NAME,48,81,66,75,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDT_PART_IDX,160,80,36,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,39,111,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,113,111,50,14
+    LTEXT           "线路名称",IDC_STATIC,7,10,38,8
+    LTEXT           "隧道名称",IDC_STATIC,7,46,37,8
+    LTEXT           "洞室类型",IDC_STATIC,7,83,39,8
+    LTEXT           "编号",IDC_STATIC,137,83,20,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_IMAGE_CONCACT_STEP1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 828
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 390
+    END
+
+    IDD_IMAGE_CONCACT_STEP2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 828
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 395
+    END
+
+    IDD_IMAGE_CONCACT_STEP3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 828
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 395
+    END
+
+    IDD_IMAGE_RULER_SET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_TUNNEL_NAMES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 125
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\TilSys.ico"
+IDR_TILSYSTYPE          ICON    DISCARDABLE     "res\\TilSysDoc.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TilSys.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_DBPROJECTS          BITMAP  DISCARDABLE     "res\\dbprojec.bmp"
+IDR_TOOLBARS            BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_2_STEP              BITMAP  DISCARDABLE     "job_images\\二台阶法.bmp"
+IDB_3_STEP              BITMAP  DISCARDABLE     "job_images\\三台阶法.bmp"
+IDB_CRD                 BITMAP  DISCARDABLE     "job_images\\CRD法.bmp"
+IDB_TUNNEL              BITMAP  DISCARDABLE     "res\\1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_FILE_SAVE_ALL
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    SEPARATOR
+    BUTTON      ID_FILE_RESUME
+    BUTTON      ID_CLASSVIEW
+    SEPARATOR
+    BUTTON      ID_VIEW_RULER_SET
+    SEPARATOR
+    BUTTON      ID_VIEW_ZOOMIN
+    BUTTON      ID_VIEW_ZOOMNORMAL
+    BUTTON      ID_VIEW_ZOOMOUT
+    SEPARATOR
+    BUTTON      ID_IMAGE_CONTRAST
+    BUTTON      ID_IMAGE_LESSCONTRAST
+    SEPARATOR
+    BUTTON      ID_IMAGE_LIGHTEN
+    BUTTON      ID_IMAGE_DARKEN
+    SEPARATOR
+    BUTTON      ID_IMAGE_USM
+    SEPARATOR
+    BUTTON      ID_IMAGE_ERODE
+    BUTTON      ID_IMAGE_DILATE
+END
+
+IDR_TOOLBARS TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_WORKSPACE
+    BUTTON      ID_CRACKCAPTION
+    BUTTON      ID_OUTPUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 TilSys(&A)...",          ID_APP_ABOUT
+    END
+END
+
+IDR_TILSYSTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建项目",                    ID_PROJECT_NEW
+        MENUITEM "打开项目",                    ID_PROJECT_OPEN
+        MENUITEM "保存项目",                    ID_PROJECT_SAVE
+        MENUITEM "项目另存为(&A)...",           ID_PROJECT_SAVE_AS
+        MENUITEM "关闭项目(&C)",                ID_PROJECT_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "打开图像文件(&O)...\tCtrl+O", ID_FILE_OPEN
+        MENUITEM "保存当前文件(&S)\tCtrl+S",    ID_FILE_SAVE
+        MENUITEM "保存所有文件",                ID_FILE_SAVE_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近项目",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "重复(&U)\tCtrl+Y",            ID_EDIT_REDO
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "原始图像层",                  ID_VIEW_LAYER_SRC_IMAGE
+        MENUITEM "裂缝图像层",                  ID_VIEW_LAYER_CRACK_IMAGE
+        MENUITEM "裂隙目标层",                  ID_VIEW_LAYER_CRACK_OBJ
+        MENUITEM SEPARATOR
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "标尺",                        ID_VIEW_RULER
+        MENUITEM SEPARATOR
+        MENUITEM "放大\t200%",                  ID_VIEW_ZOOMIN
+        MENUITEM "缩小\t50%",                   ID_VIEW_ZOOMOUT
+        MENUITEM "原始大小",                    ID_VIEW_ZOOMNORMAL
+    END
+    POPUP "图像预处理(&M)"
+    BEGIN
+        MENUITEM "亮度增强",                    ID_IMAGE_LIGHTEN
+        MENUITEM "亮度减弱",                    ID_IMAGE_DARKEN
+        MENUITEM SEPARATOR
+        MENUITEM "增强对比度",                  ID_IMAGE_CONTRAST
+        MENUITEM "降低对比度",                  ID_IMAGE_LESSCONTRAST
+        MENUITEM SEPARATOR
+        MENUITEM "色彩均衡化",                  ID_IMAGE_COLORIZE
+        MENUITEM "色彩标准化",                  ID_IMAGE_NORMALIZE
+        MENUITEM "折线变换",                    ID_IMAGE_STRETCH
+        MENUITEM SEPARATOR
+        MENUITEM "中值滤波",                    ID_IMAGE_MEDIAN
+        MENUITEM "模糊",                        ID_IMAGE_BLUR
+        MENUITEM "柔化",                        ID_IMAGE_SOFTEN
+        MENUITEM "高斯3x3",                     ID_IMAGE_GAUSSIAN3X3
+        MENUITEM "高斯5X5",                     ID_IMAGE_GAUSSIAN5X5
+        MENUITEM "锐化",                        ID_IMAGE_SHARPEN
+    END
+    POPUP "裂缝检测"
+    BEGIN
+        MENUITEM "USM",                         ID_IMAGE_USM
+        MENUITEM "反色",                        ID_IMAGE_NEGATIVE
+        MENUITEM "腐蚀",                        ID_IMAGE_ERODE
+        MENUITEM "膨胀",                        ID_IMAGE_DILATE
+        MENUITEM "阈值",                        ID_IMAGE_THRESHOLD
+        MENUITEM "细化",                        ID_IMAGE_THIN
+    END
+    POPUP "裂缝识别"
+    BEGIN
+        MENUITEM "裂缝识别",                    ID_IMAGE_FIND_CRACKS
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 TilSys(&A)...",          ID_APP_ABOUT
+    END
+END
+
+IDR_MENUTABS MENU DISCARDABLE 
+BEGIN
+    POPUP "MenuTabs"
+    BEGIN
+        MENUITEM "保存图像",                    ID_FILE_SAVE
+        MENUITEM "图象另存为 &A...",            ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "关闭图像",                    ID_FILE_CLOSE
+    END
+END
+
+IDR_MENUTOOLBARS MENU DISCARDABLE 
+BEGIN
+    POPUP "ToolBar"
+    BEGIN
+        MENUITEM "工作台",                      ID_WORKSPACE
+        MENUITEM "裂隙属性",                    ID_CRACKCAPTION
+        MENUITEM "输出信息",                    ID_OUTPUT
+    END
+END
+
+IDR_POP_MANAGE_FILE MENU DISCARDABLE 
+BEGIN
+    POPUP "FileManage"
+    BEGIN
+        MENUITEM "设置里程",                    ID_SET_COORD
+        MENUITEM "删除",                        ID_SELE_DELETED
+        MENUITEM SEPARATOR
+        MENUITEM "顺序排列",                    ID_ARRAY_MIN_MAX
+        MENUITEM "逆序排列",                    ID_ARRAY_MAX_MIN
+    END
+END
+
+IDR_POPUP_SYS_VIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "PopSysView"
+    BEGIN
+        MENUITEM "当前掌子面特征",              ID_FACE_CAPTION_CUR
+    END
+END
+
+IDR_POP_MANAGE_PRJ MENU DISCARDABLE 
+BEGIN
+    POPUP "PrjManage"
+    BEGIN
+        MENUITEM "项目属性设置",                ID_PRJ_CAPTION
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TilSys Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TilSys\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TilSys.EXE\0"
+            VALUE "ProductName", "TilSys 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+ID_Draw                 CURSOR  DISCARDABLE     "res\\id_draw.cur"
+ID_Change               CURSOR  DISCARDABLE     "res\\id_chang.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_IMAGE_CONCACT_STEP1 DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 9, 0
+0xfeb6, 0xa8cc, 0xd7bd, 0xa8b7, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xfdc8, 0xa8cc, 0xd7bd, 0xa8b7, "\000" 
+    IDC_COMBO1, 0x403, 6, 0
+0x5243, 0xb744, 0x00a8, 
+    IDC_COMBO1, 0x403, 5, 0
+0x4443, 0xa8b7, "\000" 
+    IDC_COMBO1, 0x403, 13, 0
+0xabcb, 0xe0b2, 0xdab1, 0xbcb5, 0xd3bf, 0xa8b7, "\000" 
+    IDC_COMBO1, 0x403, 17, 0
+0xc2cf, 0xbcb5, 0xb4b6, 0xacb3, 0xb0c7, 0xa8cc, 0xd7bd, 0xa8b7, "\000" 
+    IDC_COMBO1, 0x403, 19, 0
+0xc2cf, 0xbcb5, 0xb4b6, 0xacb3, 0xb0c7, 0xabc8, 0xcfb6, 0xe6c3, 0xa8b7, 
+"\000" 
+    0
+END
+
+IDD_TUNNEL_NAMES DLGINIT
+BEGIN
+    IDC_CMB_PART_NAME, 0x403, 9, 0
+0xf3d7, 0xdfcf, 0xfdd5, 0xb4b6, "\000" 
+    IDC_CMB_PART_NAME, 0x403, 9, 0
+0xd2d3, 0xdfcf, 0xfdd5, 0xb4b6, "\000" 
+    IDC_CMB_PART_NAME, 0x403, 5, 0
+0xe1ba, 0xb4b6, "\000" 
+    IDC_CMB_PART_NAME, 0x403, 5, 0
+0xb1d0, 0xaebe, "\000" 
+    IDC_CMB_PART_NAME, 0x403, 5, 0
+0xfaca, 0xaebe, "\000" 
+    IDC_CMB_PART_NAME, 0x403, 5, 0
+0xbdc6, 0xbcb5, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "隧道衬砌裂缝图像识别系统 V1.0"
+    IDR_TILSYSTYPE          "\n隧道分析\nTilSys\nTilSys Files(*.stu)\n.stu\nTilSys.Document\nTilSys"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "隧道衬砌裂缝图像识别系统 V1.0"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_RGBA       "指针处颜色(R:G:B:A):                                          "
+    ID_INDICATOR_COORD      "逻辑坐标:                 "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开多个文档\n打开文档"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存当前图形、图像文件\n保存当前图形、图像文件"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "为活动文档打开另一个窗口\n新建窗口"
+    ID_WINDOW_ARRANGE       "将图标排列在窗口底部\n排列图标"
+    ID_WINDOW_CASCADE       "排列窗口成相互重叠\n层叠窗口"
+    ID_WINDOW_TILE_HORZ     "排列窗口成互不重叠\n平铺窗口"
+    ID_WINDOW_TILE_VERT     "排列窗口成互不重叠\n平铺窗口"
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+    AFX_IDS_MDICHILD        "激活该窗口"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GRAPH_CLEAR          "外部清除\n清除开挖轮廓线外侧图形"
+    ID_GRAPH_MOVE           "选择图形\n单击选择图形"
+    ID_GRAPH_PARA           "设置图形参数\n设置图形参数"
+    ID_ARRAY_MIN_MAX        "按从小到大自动排列\n按从小到大自动排列"
+    ID_ARRAY_MAX_MIN        "按从大到小自动排列\n按从大到小自动排列"
+    ID_VIEW_RULER           "显示或关闭标尺"
+    ID_GRAPH_OBJLINK        "链接不同掌子面上的对应目标\n链接不同掌子面上的对应目标"
+    ID_IMAGE_GEOMETRY_CORRECT "对视角不同造成的几何畸变进行校正"
+    ID_IMAGE_DISTORT_CORRECT "对系统畸变进行校正"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_RULER_SET       "比例尺设置\n比例尺设置"
+    ID_PROJECT_OPEN         "打开项目\n打开项目"
+    ID_PROJECT_SAVE         "保存项目\n保存项目"
+    ID_PROJECT_SAVE_AS      "项目另存为\n项目另存为"
+    ID_PROJECT_CLOSE        "关闭项目\n关闭项目"
+    ID_FILES_OPEN           "打开多个图像文件\n打开"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_ZOOMIN          "放大到原来的2倍\n放大"
+    ID_VIEW_ZOOMOUT         "缩小\n缩小"
+    ID_VIEW_ZOOMNORMAL      "原始大小\n原始大小"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SET_COORD            "设置里程\n设置掌子面里程和修改文件名"
+    ID_VIEW_IMAGE           "显示对原图像处理的结果"
+    ID_VIEW_GRAPH           "显示对图像处理后得到的图形层"
+    ID_PROJECT_NEW          "新建项目\n新建项目"
+    ID_IMAGE_SAVE           "保存图像\n保存图像"
+    ID_IMAGE_SAVE_AS        "亮度增强\n亮度增强"
+    ID_GRAPH_SAVE           "亮度减弱\n亮度减弱"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_IMAGE_LIGHTEN        "亮度增强\n亮度增强"
+    ID_IMAGE_DARKEN         "亮度减弱\n亮度减弱"
+    ID_IMAGE_CONTRAST       "增强对比度\n增强对比度"
+    ID_IMAGE_LESSCONTRAST   "降低对比度\n降低对比度"
+    ID_IMAGE_COLORIZE       "色彩均衡化\n色彩均衡化"
+    ID_IMAGE_STRETCH        "灰度折线变换\n灰度折线变换"
+    ID_IMAGE_MEDIAN         "中值滤波\n中值滤波"
+    ID_IMAGE_SOFTEN         "柔化\n柔化"
+    ID_IMAGE_GAUSSIAN3X3    "高斯3x3\n高斯3x3"
+    ID_IMAGE_GAUSSIAN5X5    "高斯模糊5X5\n高斯5X5"
+    ID_IMAGE_SHARPEN        "图像锐化\n锐化"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_IMAGE_USM            "Unsharp Mask\nUnsharp Mask"
+    ID_IMAGE_NEGATIVE       "反色\n反色"
+    ID_IMAGE_ERODE          "腐蚀\n腐蚀"
+    ID_IMAGE_DILATE         "膨胀\n膨胀"
+    ID_IMAGE_THRESHOLD      "图像二值化\n图像二值化"
+    ID_IMAGE_THIN           "图像二值细化\n图像二值细化"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GRAPH_SAVE_AS        "增强色彩对比度..\n增强对比度"
+    ID_FILE_SAVE_ALL        "保存所有图形、图像文件\n保存所有图形、图像文件"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GRAPH_LINE           "多段线\n画多段直线,双击结束"
+    ID_GRAPH_ARC            "画圆弧\n圆弧"
+    ID_GRAPH_TEXT           "文字标注\n文字标注"
+    ID_GRAPH_MAGIC          "智能剪刀\n单击用智能剪刀自动跟踪绘图,双击结束"
+    ID_GRAPH_TUNNEL         "设置隧道拱形\n设置隧道拱形"
+    ID_GRAPH_NEW            "新建图形层\n新建图形层"
+    ID_GRAPH_LAYER_SET      "图层设置\n图层设置"
+    ID_GRAPH_POLYGON        "封闭多段线\n画封闭多段线,双击结束"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_RESUME          "恢复到上一次保存的状态\n恢复到上一次保存的状态"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CRACKCAPTION         "显示或节理、裂隙属性窗口\n显示或节理、裂隙属性窗口"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_UNDO                 "撤销\n撤销已执行的操作"
+    ID_REDO                 "重复操作\n重复被撤销的操作"
+    ID_CLASSVIEW            "子窗口打开或关闭\n子窗口打开或关闭"
+    ID_WORKSPACE            "显示或隐藏工作台\n显示或隐藏工作台"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OUTPUT               "显示或隐藏输出信息窗口\n显示或隐藏输出信息窗口"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_LAYER_SRC_IMAGE "显示或隐藏原始图像层\n显示或隐藏原始图像层"
+    ID_VIEW_LAYER_CRACK_IMAGE "显示或隐藏裂缝图像层\n显示或隐藏裂缝图像层"
+    ID_VIEW_LAYER_CRACK_OBJ "显示或隐藏裂隙目标层\n显示或隐藏裂隙目标层"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_STYLE_BAR           BITMAP  FIXED IMPURE    "res\\style_ba.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_STYLE_BAR TOOLBAR FIXED IMPURE  16, 15
+BEGIN
+    BUTTON      ID_CHAR_BOLD
+    BUTTON      ID_CHAR_ITALIC
+    BUTTON      ID_CHAR_UNDERLINE
+    SEPARATOR
+    BUTTON      IDC_F
+    SEPARATOR
+    BUTTON      IDC_FONT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+Cursor_Move             CURSOR  DISCARDABLE     "res\\cursor_m.cur"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\TilSys.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,45 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Canvas - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4B4.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "CxImage" /I "..\TilCore" /I "..\MathPro" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"Debug/Canvas.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Projects\2011四川省科技厅应用基础研究项目\系统代码\AllPrj\Canvas\FindCrack.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4B4.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4B5.tmp" with contents
+[
+lib\CxImage.lib TilCore.lib MathPro.lib /nologo /stack:0x989680 /subsystem:windows /dll /incremental:yes /pdb:"../lib/Canvas.pdb" /debug /machine:I386 /def:".\Canvas.def" /out:"../bin/Canvas.dll" /implib:"../lib/Canvas.lib" /pdbtype:sept /libpath:"..\lib" 
+".\Debug\Canvas.obj"
+".\Debug\FindCrack.obj"
+".\Debug\Image.obj"
+".\Debug\ObjEdgeList.obj"
+".\Debug\ObjRunLenCode.obj"
+".\Debug\SegApi.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TilCanvas.obj"
+".\Debug\TilCanvasMgr.obj"
+".\Debug\Canvas.res"
+".\lib\cximage.lib"
+"\Projects\2011四川省科技厅应用基础研究项目\系统代码\AllPrj\lib\TilCore.lib"
+"\Projects\2011四川省科技厅应用基础研究项目\系统代码\AllPrj\lib\MathPro.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4B5.tmp"
+<h3>Output Window</h3>
+Compiling...
+FindCrack.cpp
+Linking...
+   Creating library ../lib/Canvas.lib and object ../lib/Canvas.exp
+
+
+
+<h3>Results</h3>
+Canvas.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

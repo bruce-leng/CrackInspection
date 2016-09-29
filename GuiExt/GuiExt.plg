@@ -1,0 +1,53 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GuiExt - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC7D.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../header" /I "../TilCore" /I "../GuiLib" /I "../Canvas" /I "../Canvas/CxImage" /I "../MathPro" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"Debug/GuiExt.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Projects\2011四川省科技厅应用基础研究项目\系统代码\AllPrj\GuiExt\ListCtrlEx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC7D.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC7E.tmp" with contents
+[
+GuiLibd114.lib Canvas.lib ..\Canvas\lib\cxImage.lib MathPro.lib TilCore.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"../lib/GuiExt.pdb" /debug /machine:I386 /def:".\GuiExt.def" /out:"..\bin/GuiExt.dll" /implib:"../lib/GuiExt.lib" /pdbtype:sept /libpath:"../lib" 
+".\Debug\BPnetwork.obj"
+".\Debug\ComboListCtrl.obj"
+".\Debug\GuiExt.obj"
+".\Debug\GuiToolBarEx.obj"
+".\Debug\InPlaceCombo.obj"
+".\Debug\InPlaceEdit.obj"
+".\Debug\ListCtrlEx.obj"
+".\Debug\LogEdit.obj"
+".\Debug\PreviewList.obj"
+".\Debug\ruler.obj"
+".\Debug\SortHeaderCtrl.obj"
+".\Debug\SortListCtrl.obj"
+".\Debug\Splash.obj"
+".\Debug\StaticCanvas.obj"
+".\Debug\StdAfx.obj"
+".\Debug\UndoTree.obj"
+".\Debug\GuiExt.res"
+"\Projects\2011四川省科技厅应用基础研究项目\系统代码\AllPrj\lib\TilCore.lib"
+"\Projects\2011四川省科技厅应用基础研究项目\系统代码\AllPrj\lib\GuiLibd114.lib"
+"\Projects\2011四川省科技厅应用基础研究项目\系统代码\AllPrj\lib\Canvas.lib"
+"\Projects\2011四川省科技厅应用基础研究项目\系统代码\AllPrj\lib\MathPro.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC7E.tmp"
+<h3>Output Window</h3>
+Compiling...
+ListCtrlEx.cpp
+Linking...
+   Creating library ../lib/GuiExt.lib and object ../lib/GuiExt.exp
+
+
+
+<h3>Results</h3>
+GuiExt.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
